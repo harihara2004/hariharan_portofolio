@@ -72,20 +72,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Hariharan V — Machine Learning Engineer & AI Developer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Hariharan V — Machine Learning Engineer, AI Developer, and future tech entrepreneur. Projects in Deep Learning, NLP, Computer Vision, and AI automation.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Hariharan V, Machine Learning Engineer, AI Developer, Deep Learning, Python, TensorFlow, Data Science, Portfolio",
+      },
+      { name: "author", content: "Hariharan V" },
+      { property: "og:title", content: "Hariharan V — ML Engineer & AI Developer" },
+      {
+        property: "og:description",
+        content:
+          "Building intelligent systems with Machine Learning, Deep Learning, and AI automation.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Hariharan V — ML Engineer & AI Developer" },
+      {
+        name: "twitter:description",
+        content: "ML Engineer • AI Developer • Future Tech Entrepreneur",
+      },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: "/" },
     ],
   }),
   shellComponent: RootShell,
