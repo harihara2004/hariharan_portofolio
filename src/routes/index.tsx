@@ -630,7 +630,7 @@ function PortfolioPage() {
               { icon: Mail, label: "Email", value: "hariharan.v@example.com", href: "mailto:hariharan.v@example.com" },
               { icon: Phone, label: "Phone", value: "+91 90000 00000", href: "tel:+919000000000" },
               { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/hariharan-v", href: "https://linkedin.com/in/hariharan-v" },
-              { icon: Github, label: "GitHub", value: "github.com/hariharan-v", href: "https://github.com/hariharan-v" },
+              { icon: Github, label: "GitHub", value: "github.com/harihara2004", href: "https://github.com/harihara2004" },
             ].map((c) => {
               const Icon = c.icon;
               return (
@@ -727,7 +727,7 @@ function PortfolioPage() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/hariharan-v"
+              href="https://github.com/harihara2004"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
