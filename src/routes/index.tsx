@@ -490,20 +490,16 @@ function PortfolioPage() {
                   </p>
                   <div className="mt-5 flex gap-2 pt-2">
                     <a
-                      href="https://github.com/"
+                      href={p.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium transition hover:bg-white/10"
-                    >
-                      <Github className="h-3.5 w-3.5" /> GitHub
-                    </a>
-                    <a
-                      href="#"
                       className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg bg-gradient-brand px-3 py-2 text-xs font-semibold text-white transition hover:scale-[1.02]"
                     >
-                      <ExternalLink className="h-3.5 w-3.5" /> Live Demo
+                      <Github className="h-3.5 w-3.5" /> View on GitHub
+                      <ExternalLink className="h-3.5 w-3.5" />
                     </a>
                   </div>
+
                 </div>
               </article>
             );
