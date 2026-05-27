@@ -629,7 +629,7 @@ function PortfolioPage() {
             {[
               { icon: Mail, label: "Email", value: "hariharan.v@example.com", href: "mailto:hariharan.v@example.com" },
               { icon: Phone, label: "Phone", value: "+91 90000 00000", href: "tel:+919000000000" },
-              { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/hariharan-v", href: "https://linkedin.com/in/hariharan-v" },
+              { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/hariharan-v-037881320", href: "https://www.linkedin.com/in/hariharan-v-037881320" },
               { icon: Github, label: "GitHub", value: "github.com/harihara2004", href: "https://github.com/harihara2004" },
             ].map((c) => {
               const Icon = c.icon;
@@ -736,7 +736,7 @@ function PortfolioPage() {
               <Github className="h-4 w-4" />
             </a>
             <a
-              href="https://linkedin.com/in/hariharan-v"
+              href="https://www.linkedin.com/in/hariharan-v-037881320"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
