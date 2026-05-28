@@ -199,11 +199,29 @@ const CERTIFICATIONS = [
   { name: "Getting Started with Data Analytics on AWS", issuer: "Coursera", date: "Jun 2024" },
 ];
 
+const PAPERS = [
+  {
+    title: "Generative AI & LLM-Based Blood Management System with Intelligent Chatbot & Mapping Interface",
+    venue: "National Conference on Data to Intelligent AI in Shaping the Future (DIGISF'26)",
+    host: "SRM IST",
+  },
+  {
+    title: "An Integrated Blockchain and Cloud-Based Explainable AI Framework for Reducing Black Box Risk in Deep Learning Systems",
+    venue: "International Conference",
+    host: "SRM IST",
+  },
+  {
+    title: "A Hybrid Machine Learning Framework for Accurate Healthcare Disease Prediction",
+    venue: "International Conference",
+    host: "Vivekanandha Arts and Science College for Women, Sankagiri, Veerachipalayam, Salem",
+  },
+];
+
 const ACHIEVEMENTS = [
-  { icon: Trophy, title: "Hackathon Finalist", desc: "Top 10 in a national AI hackathon." },
-  { icon: Award, title: "AI Project Showcase", desc: "Featured ML project at college tech fest." },
-  { icon: Sparkles, title: "Open Source", desc: "Active contributor to ML repositories on GitHub." },
-  { icon: Rocket, title: "Tech Events", desc: "Organized and led AI workshops for juniors." },
+  { icon: Trophy, title: "Chess Boxing — National Gold", desc: "Gold medal at the National level in Chess Boxing." },
+  { icon: Award, title: "Boxing — State Silver", desc: "Silver medal at the State level in Boxing." },
+  { icon: Award, title: "Boxing — District Gold", desc: "Gold medal at the District level in Boxing." },
+  { icon: Sparkles, title: "Published Researcher", desc: "Three research papers presented at national & international conferences." },
 ];
 
 function useVisitorCount() {
