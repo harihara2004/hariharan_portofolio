@@ -221,7 +221,7 @@ const ACHIEVEMENTS = [
   { icon: Trophy, title: "Chess Boxing — National Gold", desc: "Gold medal at the National level in Chess Boxing." },
   { icon: Award, title: "Boxing — State Silver", desc: "Silver medal at the State level in Boxing." },
   { icon: Award, title: "Boxing — District Gold", desc: "Gold medal at the District level in Boxing." },
-  { icon: Sparkles, title: "Published Researcher", desc: "Three research papers presented at national & international conferences." },
+  { icon: Sparkles, title: "Conference Presenter", desc: "Presented three research papers at national & international conferences." },
 ];
 
 function useVisitorCount() {
@@ -613,7 +613,7 @@ function PortfolioPage() {
       </Section>
 
       {/* Papers & Conferences */}
-      <Section id="papers" eyebrow="Research" title="Conferences & Paper Presentations">
+      <Section id="papers" eyebrow="Presentations" title="Conferences & Paper Presentations">
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {PAPERS.map((p) => (
             <article
