@@ -204,16 +204,19 @@ const PAPERS = [
     title: "Generative AI & LLM-Based Blood Management System with Intelligent Chatbot & Mapping Interface",
     venue: "National Conference on Data to Intelligent AI in Shaping the Future (DIGISF'26)",
     host: "SRM IST",
+    github: "https://github.com/harihara2004",
   },
   {
     title: "An Integrated Blockchain and Cloud-Based Explainable AI Framework for Reducing Black Box Risk in Deep Learning Systems",
     venue: "International Conference",
     host: "SRM IST",
+    github: "https://github.com/harihara2004",
   },
   {
     title: "A Hybrid Machine Learning Framework for Accurate Healthcare Disease Prediction",
     venue: "International Conference",
     host: "Vivekanandha Arts and Science College for Women, Sankagiri, Veerachipalayam, Salem",
+    github: "https://github.com/harihara2004",
   },
 ];
 
@@ -626,6 +629,16 @@ function PortfolioPage() {
               <h3 className="mt-4 font-semibold leading-snug">{p.title}</h3>
               <p className="mt-2 text-sm text-muted-foreground">{p.venue}</p>
               <p className="mt-1 text-xs text-muted-foreground/80">{p.host}</p>
+              {p.github && (
+                <a
+                  href={p.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex w-fit items-center gap-1.5 rounded-lg border border-border bg-background/40 px-3 py-1.5 text-xs font-medium transition hover:bg-background/70"
+                >
+                  <Github className="h-3.5 w-3.5" /> View on GitHub
+                </a>
+              )}
             </article>
           ))}
         </div>
