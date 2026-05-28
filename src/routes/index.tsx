@@ -567,6 +567,7 @@ function PortfolioPage() {
               <Award className="h-7 w-7 text-primary" />
               <h3 className="mt-3 font-semibold">{c.name}</h3>
               <p className="text-sm text-muted-foreground">{c.issuer}</p>
+              {c.date && <p className="mt-1 text-xs text-muted-foreground">{c.date}</p>}
             </div>
           ))}
         </div>
