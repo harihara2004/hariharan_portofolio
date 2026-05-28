@@ -49,6 +49,7 @@ const NAV = [
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
   { id: "certifications", label: "Certifications" },
+  { id: "papers", label: "Papers" },
   { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];
@@ -198,11 +199,29 @@ const CERTIFICATIONS = [
   { name: "Getting Started with Data Analytics on AWS", issuer: "Coursera", date: "Jun 2024" },
 ];
 
+const PAPERS = [
+  {
+    title: "Generative AI & LLM-Based Blood Management System with Intelligent Chatbot & Mapping Interface",
+    venue: "National Conference on Data to Intelligent AI in Shaping the Future (DIGISF'26)",
+    host: "SRM IST",
+  },
+  {
+    title: "An Integrated Blockchain and Cloud-Based Explainable AI Framework for Reducing Black Box Risk in Deep Learning Systems",
+    venue: "International Conference",
+    host: "SRM IST",
+  },
+  {
+    title: "A Hybrid Machine Learning Framework for Accurate Healthcare Disease Prediction",
+    venue: "International Conference",
+    host: "Vivekanandha Arts and Science College for Women, Sankagiri, Veerachipalayam, Salem",
+  },
+];
+
 const ACHIEVEMENTS = [
-  { icon: Trophy, title: "Hackathon Finalist", desc: "Top 10 in a national AI hackathon." },
-  { icon: Award, title: "AI Project Showcase", desc: "Featured ML project at college tech fest." },
-  { icon: Sparkles, title: "Open Source", desc: "Active contributor to ML repositories on GitHub." },
-  { icon: Rocket, title: "Tech Events", desc: "Organized and led AI workshops for juniors." },
+  { icon: Trophy, title: "Chess Boxing — National Gold", desc: "Gold medal at the National level in Chess Boxing." },
+  { icon: Award, title: "Boxing — State Silver", desc: "Silver medal at the State level in Boxing." },
+  { icon: Award, title: "Boxing — District Gold", desc: "Gold medal at the District level in Boxing." },
+  { icon: Sparkles, title: "Published Researcher", desc: "Three research papers presented at national & international conferences." },
 ];
 
 function useVisitorCount() {
@@ -589,6 +608,25 @@ function PortfolioPage() {
               <p className="text-sm text-muted-foreground">{c.issuer}</p>
               {c.date && <p className="mt-1 text-xs text-muted-foreground">{c.date}</p>}
             </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Papers & Conferences */}
+      <Section id="papers" eyebrow="Research" title="Conferences & Paper Presentations">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {PAPERS.map((p) => (
+            <article
+              key={p.title}
+              className="reveal flex h-full flex-col rounded-2xl glass p-6 transition hover:-translate-y-1 hover:glow"
+            >
+              <span className="grid h-11 w-11 flex-none place-items-center rounded-xl bg-gradient-brand text-white">
+                <Sparkles className="h-5 w-5" />
+              </span>
+              <h3 className="mt-4 font-semibold leading-snug">{p.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{p.venue}</p>
+              <p className="mt-1 text-xs text-muted-foreground/80">{p.host}</p>
+            </article>
           ))}
         </div>
       </Section>
