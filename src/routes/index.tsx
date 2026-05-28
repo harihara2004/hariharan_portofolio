@@ -612,6 +612,25 @@ function PortfolioPage() {
         </div>
       </Section>
 
+      {/* Papers & Conferences */}
+      <Section id="papers" eyebrow="Research" title="Conferences & Paper Presentations">
+        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {PAPERS.map((p) => (
+            <article
+              key={p.title}
+              className="reveal flex h-full flex-col rounded-2xl glass p-6 transition hover:-translate-y-1 hover:glow"
+            >
+              <span className="grid h-11 w-11 flex-none place-items-center rounded-xl bg-gradient-brand text-white">
+                <Sparkles className="h-5 w-5" />
+              </span>
+              <h3 className="mt-4 font-semibold leading-snug">{p.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{p.venue}</p>
+              <p className="mt-1 text-xs text-muted-foreground/80">{p.host}</p>
+            </article>
+          ))}
+        </div>
+      </Section>
+
       {/* Achievements */}
       <Section id="achievements" eyebrow="Highlights" title="Achievements">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
