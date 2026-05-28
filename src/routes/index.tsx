@@ -49,6 +49,7 @@ const NAV = [
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
   { id: "certifications", label: "Certifications" },
+  { id: "papers", label: "Papers" },
   { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];
