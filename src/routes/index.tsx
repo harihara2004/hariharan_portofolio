@@ -53,42 +53,55 @@ const NAV = [
   { id: "contact", label: "Contact" },
 ];
 
+// Skills derived from the tech stacks of Hariharan's real GitHub projects
+// (https://github.com/harihara2004) — only tech actually shipped in his repos.
 const SKILLS = [
+  {
+    title: "Machine Learning",
+    icon: Brain,
+    items: [
+      { name: "Scikit-learn", level: 88 },
+      { name: "Multinomial Naive Bayes", level: 85 },
+      { name: "Text Preprocessing / NLP", level: 80 },
+      { name: "Model Deployment (Streamlit)", level: 82 },
+    ],
+  },
   {
     title: "Programming",
     icon: Code2,
     items: [
-      { name: "Python", level: 92 },
-      { name: "Java", level: 78 },
-      { name: "C", level: 72 },
+      { name: "Python", level: 90 },
+      { name: "JavaScript", level: 78 },
+      { name: "PHP", level: 72 },
     ],
   },
   {
-    title: "AI / ML",
-    icon: Brain,
-    items: [
-      { name: "TensorFlow", level: 88 },
-      { name: "Scikit-learn", level: 90 },
-      { name: "NLP", level: 82 },
-      { name: "Neural Networks", level: 85 },
-    ],
-  },
-  {
-    title: "Data",
+    title: "Data & Analytics",
     icon: Database,
     items: [
-      { name: "Pandas", level: 90 },
-      { name: "NumPy", level: 90 },
-      { name: "Data Visualization", level: 84 },
+      { name: "Pandas", level: 88 },
+      { name: "NumPy", level: 85 },
+      { name: "Excel Dashboards", level: 82 },
+      { name: "Data Visualization", level: 80 },
     ],
   },
   {
-    title: "Web",
+    title: "Web Development",
     icon: Globe,
     items: [
-      { name: "HTML", level: 88 },
-      { name: "CSS", level: 82 },
-      { name: "JavaScript", level: 78 },
+      { name: "React.js", level: 82 },
+      { name: "Redux", level: 75 },
+      { name: "Tailwind CSS", level: 80 },
+      { name: "HTML / CSS", level: 88 },
+    ],
+  },
+  {
+    title: "Backend & Database",
+    icon: Layers,
+    items: [
+      { name: "Firebase", level: 78 },
+      { name: "MySQL", level: 75 },
+      { name: "PHP Backend", level: 72 },
     ],
   },
   {
@@ -98,6 +111,7 @@ const SKILLS = [
       { name: "GitHub", level: 90 },
       { name: "VS Code", level: 92 },
       { name: "Jupyter Notebook", level: 90 },
+      { name: "Streamlit", level: 85 },
     ],
   },
 ];
@@ -249,10 +263,10 @@ function PortfolioPage() {
   const visitors = useVisitorCount();
   const phrases = useMemo(
     () => [
-      "Machine Learning Engineer",
-      "AI Developer",
-      "Deep Learning Enthusiast",
-      "Future Tech Entrepreneur",
+      "Future Machine Learning Engineer",
+      "AI Developer in the Making",
+      "Data Science Enthusiast",
+      "Aspiring Tech Entrepreneur",
     ],
     [],
   );
@@ -316,7 +330,7 @@ function PortfolioPage() {
           <div className="reveal">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs text-muted-foreground">
               <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
-              Available for opportunities
+              Future ML Engineer · Open to opportunities
             </div>
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
               Hi, I'm <span className="text-gradient">Hariharan V</span>
@@ -325,9 +339,10 @@ function PortfolioPage() {
               <Typing phrases={phrases} />
             </p>
             <p className="mt-6 max-w-xl text-base text-muted-foreground md:text-lg">
-              I build intelligent systems with Machine Learning, Deep Learning, and AI
-              automation. Passionate about turning data into products — and about shaping
-              the next wave of future technology as a founder.
+              I'm a future Machine Learning Engineer training at the intersection of
+              Data Science, AI and full-stack development. I learn by building — every
+              project on my GitHub is a step toward shipping intelligent products that
+              solve real problems for real people.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -377,25 +392,30 @@ function PortfolioPage() {
       </section>
 
       {/* About */}
-      <Section id="about" eyebrow="About me" title="Engineer. Builder. Future founder.">
+      <Section id="about" eyebrow="About me" title="Future ML Engineer. Builder. Lifelong learner.">
         <div className="reveal mx-auto max-w-3xl rounded-3xl glass p-8 text-center">
           <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-            I'm a Machine Learning and AI developer who loves turning raw data into
-            useful, intelligent products. My toolkit spans{" "}
-            <span className="text-foreground">Python</span>,{" "}
-            <span className="text-foreground">Machine Learning</span>,{" "}
-            <span className="text-foreground">Deep Learning</span>,{" "}
-            <span className="text-foreground">Data Science</span>, and{" "}
-            <span className="text-foreground">AI automation</span> — and I focus on
-            building things that ship, not just notebooks. Long term, I'm working
-            toward launching a startup that uses AI to solve real, everyday problems
-            for the next billion users.
+            I'm <span className="text-foreground">Hariharan V</span>, a future{" "}
+            <span className="text-foreground">Machine Learning Engineer</span> currently
+            sharpening my craft through hands-on projects and an{" "}
+            <span className="text-foreground">M.Sc. in Applied Data Science at SRM IST</span>.
+            My stack — <span className="text-foreground">Python</span>,{" "}
+            <span className="text-foreground">Scikit-learn</span>,{" "}
+            <span className="text-foreground">Pandas / NumPy</span>,{" "}
+            <span className="text-foreground">Streamlit</span>,{" "}
+            <span className="text-foreground">React</span>,{" "}
+            <span className="text-foreground">Firebase</span> and{" "}
+            <span className="text-foreground">PHP / MySQL</span> — comes straight from
+            the projects I've built and shipped on GitHub, from ML-powered spam
+            classifiers to full-stack web apps and data dashboards. My goal: grow into
+            a strong ML Engineer and eventually build an AI startup that solves
+            everyday problems for the next billion users.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              { k: "10+", v: "AI / ML projects" },
-              { k: "6+", v: "Certifications" },
-              { k: "∞", v: "Curiosity" },
+              { k: "5+", v: "Shipped GitHub projects" },
+              { k: "8+", v: "Certifications" },
+              { k: "∞", v: "Curiosity to learn" },
             ].map((s) => (
               <div key={s.v} className="rounded-2xl border border-white/10 bg-white/5 p-5">
                 <div className="text-3xl font-bold text-gradient">{s.k}</div>
