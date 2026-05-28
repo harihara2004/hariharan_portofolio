@@ -536,50 +536,24 @@ function PortfolioPage() {
 
       {/* Education */}
       <Section id="education" eyebrow="Education" title="Academic Background">
-        <div className="reveal mx-auto max-w-3xl rounded-3xl glass p-8">
-          <div className="flex items-start gap-4">
-            <span className="grid h-12 w-12 flex-none place-items-center rounded-2xl bg-gradient-brand text-white">
-              <GraduationCap className="h-6 w-6" />
-            </span>
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold">
-                B.E. / B.Tech in Computer Science & Engineering
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Your College Name — Currently Pursuing
-              </p>
-              <p className="mt-1 text-sm">
-                <span className="text-muted-foreground">CGPA: </span>
-                <span className="font-semibold text-gradient">8.5 / 10</span>
-              </p>
-              <div className="mt-4">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Relevant coursework
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Machine Learning",
-                    "Deep Learning",
-                    "Data Structures",
-                    "DBMS",
-                    "Operating Systems",
-                    "Probability & Statistics",
-                    "Linear Algebra",
-                    "AI",
-                  ].map((c) => (
-                    <span
-                      key={c}
-                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs"
-                    >
-                      {c}
-                    </span>
-                  ))}
+        <div className="mx-auto grid max-w-3xl gap-5">
+          {EDUCATION.map((e) => (
+            <div key={e.school} className="reveal rounded-3xl glass p-6 sm:p-8">
+              <div className="flex items-start gap-4">
+                <span className="grid h-12 w-12 flex-none place-items-center rounded-2xl bg-gradient-brand text-white">
+                  <GraduationCap className="h-6 w-6" />
+                </span>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold">{e.degree}</h3>
+                  <p className="text-sm text-muted-foreground">{e.school}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{e.date}</p>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </Section>
+
 
       {/* Certifications */}
       <Section id="certifications" eyebrow="Credentials" title="Certifications">
