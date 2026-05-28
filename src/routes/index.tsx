@@ -153,38 +153,35 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
-    title: "Machine Learning Intern",
-    org: "AI Research Lab",
-    date: "2024",
-    desc: "Built and benchmarked deep learning models for image classification, contributing data pipelines and evaluation reports.",
+    title: "Data Scientist Intern",
+    org: "SkillVertex",
+    date: "Jul 2024 – Aug 2024",
+    desc: "Remote internship based in Bengaluru, Karnataka. Worked as a Data Science student / lean Data Analyst in a stimulating learning environment, building hands-on projects with Python.",
+  },
+];
+
+const EDUCATION = [
+  {
+    school: "SRM IST Chennai",
+    degree: "Master of Science — Applied Data Science",
+    date: "Jul 2025",
   },
   {
-    title: "Data Science Workshop",
-    org: "National Skill Program",
-    date: "2024",
-    desc: "Hands-on training in Pandas, Scikit-learn, and end-to-end ML project delivery.",
-  },
-  {
-    title: "AI Hackathon Finalist",
-    org: "Inter-college Hackathon",
-    date: "2024",
-    desc: "Built a real-time fake news detector in 36 hours; placed in the top finalists.",
-  },
-  {
-    title: "Kaggle Competitions",
-    org: "Kaggle Community",
-    date: "2023 – Present",
-    desc: "Active participant in tabular and NLP competitions, exploring feature engineering and model stacking.",
+    school: "VELS University",
+    degree: "Bachelor of Computer Application — Specialist in Data Science",
+    date: "Aug 2023 – May 2025",
   },
 ];
 
 const CERTIFICATIONS = [
-  { name: "Machine Learning Specialization", issuer: "Coursera — DeepLearning.AI" },
-  { name: "TensorFlow Developer", issuer: "Google" },
-  { name: "Python for Data Science", issuer: "IBM" },
-  { name: "Deep Learning Foundations", issuer: "NVIDIA DLI" },
-  { name: "Data Analysis with Pandas", issuer: "Kaggle Learn" },
-  { name: "AI for Everyone", issuer: "Coursera" },
+  { name: "Data Structure using Python Programming - 2025", issuer: "CodeTantra", date: "Feb 2026 · Expires Mar 2027" },
+  { name: "5-Day Data Science Internship Program", issuer: "Prompt Infotech Coimbatore", date: "Aug 2024" },
+  { name: "Business Applications of Data Science, AI, and ML", issuer: "Great Learning", date: "Jan 2023" },
+  { name: "Probability for Data Science", issuer: "Great Learning", date: "Sep 2023" },
+  { name: "Honours Diploma in Computer Application (HDCA)", issuer: "CSC Computer Education, Medavakkam", date: "May 2022" },
+  { name: "Diploma in Full Stack Java Developer (DFJD)", issuer: "CSC Computer Education, Medavakkam", date: "Jun 2023" },
+  { name: "Data Science Training Program", issuer: "SkillVertex", date: "Jun 2024" },
+  { name: "Getting Started with Data Analytics on AWS", issuer: "Coursera", date: "Jun 2024" },
 ];
 
 const ACHIEVEMENTS = [
