@@ -72,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hariharan V — Machine Learning Engineer & AI Developer" },
+      { title: "Hariharan V _Machine Learning Engineer" },
       {
         name: "description",
         content:
@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Hariharan V, Machine Learning Engineer, AI Developer, Deep Learning, Python, TensorFlow, Data Science, Portfolio",
       },
       { name: "author", content: "Hariharan V" },
-      { property: "og:title", content: "Hariharan V — ML Engineer & AI Developer" },
+      { property: "og:title", content: "Hariharan V _Machine Learning Engineer" },
       {
         property: "og:description",
         content:
@@ -92,11 +92,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Hariharan V — ML Engineer & AI Developer" },
+      { name: "twitter:title", content: "Hariharan V _Machine Learning Engineer" },
       {
         name: "twitter:description",
         content: "ML Engineer • AI Developer • Future Tech Entrepreneur",
       },
+      { name: "description", content: "A modern, ATS-friendly portfolio showcasing AI/ML expertise with a futuristic, responsive design." },
+      { property: "og:description", content: "A modern, ATS-friendly portfolio showcasing AI/ML expertise with a futuristic, responsive design." },
+      { name: "twitter:description", content: "A modern, ATS-friendly portfolio showcasing AI/ML expertise with a futuristic, responsive design." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/72922ff4-ad77-40a7-a82f-9f602fcc3376/id-preview-cee6b2d5--d895ffdd-192c-4449-878d-add5a4999e98.lovable.app-1780023512507.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/72922ff4-ad77-40a7-a82f-9f602fcc3376/id-preview-cee6b2d5--d895ffdd-192c-4449-878d-add5a4999e98.lovable.app-1780023512507.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
