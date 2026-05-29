@@ -788,7 +788,7 @@ function PortfolioPage() {
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href="mailto:hariharan.v@example.com"
+              href="mailto:hariharanv218@gmail.com"
               aria-label="Email"
               className="grid h-9 w-9 place-items-center rounded-lg glass transition hover:glow"
             >
