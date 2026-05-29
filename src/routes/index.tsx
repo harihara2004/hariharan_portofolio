@@ -300,7 +300,7 @@ function PortfolioPage() {
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) return;
     const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
     const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
-    window.location.href = `mailto:hariharan.v@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hariharanv218@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
