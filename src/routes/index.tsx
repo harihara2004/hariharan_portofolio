@@ -300,7 +300,7 @@ function PortfolioPage() {
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) return;
     const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
     const body = encodeURIComponent(`${form.message}\n\n— ${form.name} (${form.email})`);
-    window.location.href = `mailto:hariharan.v@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hariharanv218@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -670,8 +670,8 @@ function PortfolioPage() {
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           <div className="reveal space-y-4">
             {[
-              { icon: Mail, label: "Email", value: "hariharan.v@example.com", href: "mailto:hariharan.v@example.com" },
-              { icon: Phone, label: "Phone", value: "+91 90000 00000", href: "tel:+919000000000" },
+              { icon: Mail, label: "Email", value: "hariharanv218@gmail.com", href: "mailto:hariharanv218@gmail.com" },
+              { icon: Phone, label: "Phone", value: "+91 70947 04210", href: "tel:+917094704210" },
               { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/hariharan-v-037881320", href: "https://www.linkedin.com/in/hariharan-v-037881320" },
               { icon: Github, label: "GitHub", value: "github.com/harihara2004", href: "https://github.com/harihara2004" },
             ].map((c) => {
@@ -788,7 +788,7 @@ function PortfolioPage() {
               <Linkedin className="h-4 w-4" />
             </a>
             <a
-              href="mailto:hariharan.v@example.com"
+              href="mailto:hariharanv218@gmail.com"
               aria-label="Email"
               className="grid h-9 w-9 place-items-center rounded-lg glass transition hover:glow"
             >
